@@ -31,7 +31,7 @@ android {
     }
     defaultConfig {
         // minSdkVersion is determined by Native View.
-        minSdkVersion 21
+        minSdkVersion 24
         targetSdkVersion 33
         compileSdk 34
 
@@ -47,8 +47,8 @@ android {
         // Flag to enable support for the new language APIs
         coreLibraryDesugaringEnabled true
         // Sets Java compatibility to Java 11
-        sourceCompatibility JavaVersion.VERSION_18
-        targetCompatibility JavaVersion.VERSION_18
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
     if (project.android.hasProperty('namespace')) {
         namespace 'net.touchcapture.qr.flutterqr'
